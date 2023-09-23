@@ -39,13 +39,18 @@ public class MyCustomAdapter extends BaseAdapter {
         if (view == null) {
             // convertView/View: is a recycled View that you can reuse to
             //        improve the performance of your list.
-            view= LayoutInflater.from(context).inflate(R.layout.my_list_item,viewGroup,false);
+
+            view = LayoutInflater.from(context).inflate(R.layout.my_list_item,viewGroup,false);
+            holder=new ViewHolder();
+            holder.textView = view.findViewById(R.id.text1);
+            view.setTag(holder);
         }else {
             // Reusing the View (that's recycled)
             holder= (ViewHolder) view.getTag();
         }
+        holder.textView.setText(items[i]);
 
-        return null; // Displays the data at a position in the data set
+        return view; // Displays the data at a position in the data set
     }
 
     static class ViewHolder{
