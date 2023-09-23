@@ -29,7 +29,7 @@ public class MyCustomAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int i) {
-        return i;
+        return i; // Returns a unique Identifier for the item at the given position
     }
 
     @Override
@@ -48,8 +48,10 @@ public class MyCustomAdapter extends BaseAdapter {
             // Reusing the View (that's recycled)
             holder= (ViewHolder) view.getTag();
         }
+        // Set the data to the view
         holder.textView.setText(items[i]);
 
+        // Binding data to views within the convertView
         return view; // Displays the data at a position in the data set
     }
 
