@@ -4,15 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/goldy"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+
+    <!-- - - - - - - - - - - - - - - - - -->
+
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/usernameText"-->
+    <!--        android:hint="username"-->
+    <!--        android:layout_marginTop="160dp"-->
+    <!--        android:layout_marginLeft="16dp"-->
+    <!--        android:layout_marginRight="16dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editText"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="password"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginLeft="16dp"-->
+    <!--        android:layout_marginRight="16dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/usernameText"/>-->
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Save Credentials"-->
+    <!--        android:id="@+id/btn"-->
+    <!--        android:layout_marginTop="48dp"-->
+    <!--        android:layout_marginLeft="16dp"-->
+    <!--        android:layout_marginRight="16dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editText"/>-->
+
+    <!-- - - - - - - - - - - - - - - - - -->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="280dp"-->
+    <!--        android:text="Gold Price in $"-->
+    <!--        android:textSize="34sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/goldpriceText"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:text="1900"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="72sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView"/>-->
+    <!--    -->
+
+    <!-- - - - - - - - - - - - - - - - - -->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextNumber"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="200dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="number"-->
+    <!--        android:hint="Enter Gold Price to Update it!"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="48dp"-->
+    <!--        android:text="Update Price"-->
+    <!--        android:id="@+id/btn"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"-->
+    <!--        app:layout_constraintHorizontal_bias="0.485"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/editTextNumber"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
